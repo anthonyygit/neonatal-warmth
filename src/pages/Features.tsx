@@ -1,0 +1,165 @@
+import Layout from "@/components/Layout";
+import { 
+  Thermometer, 
+  Shield, 
+  Bell, 
+  Activity, 
+  Wifi, 
+  Battery, 
+  Monitor, 
+  Volume2,
+  Zap,
+  Clock,
+  CheckCircle2
+} from "lucide-react";
+
+const Features = () => {
+  const mainFeatures = [
+    {
+      icon: Thermometer,
+      title: "Precision Temperature Control",
+      description: "Our advanced thermal regulation system maintains skin temperature within ±0.1°C, using dual-mode servo control that adapts to each infant's needs.",
+      highlights: ["Dual-mode servo control", "Skin & air temperature modes", "Automatic weaning function"],
+    },
+    {
+      icon: Shield,
+      title: "Multi-Layer Safety System",
+      description: "Five independent safety mechanisms work in harmony to ensure uninterrupted protection, with automatic failover and instant alerts.",
+      highlights: ["Over-temperature protection", "Power failure backup", "Sensor malfunction detection"],
+    },
+    {
+      icon: Activity,
+      title: "Integrated Vital Monitoring",
+      description: "Real-time monitoring of heart rate, SpO2, and respiration with trend analysis and customizable alarm thresholds.",
+      highlights: ["Heart rate monitoring", "Pulse oximetry", "Respiration tracking"],
+    },
+    {
+      icon: Wifi,
+      title: "Smart Connectivity",
+      description: "Seamless integration with hospital information systems, enabling remote monitoring and comprehensive data logging.",
+      highlights: ["HL7 FHIR compatible", "Remote access dashboard", "Cloud data backup"],
+    },
+  ];
+
+  const additionalFeatures = [
+    { icon: Battery, title: "4-Hour Battery Backup", description: "Continuous operation during power outages" },
+    { icon: Monitor, title: "HD Touch Display", description: "Intuitive 12-inch color touchscreen interface" },
+    { icon: Volume2, title: "Whisper-Quiet Operation", description: "Under 35dB for peaceful environment" },
+    { icon: Zap, title: "Energy Efficient", description: "40% less power consumption than competitors" },
+    { icon: Clock, title: "Quick Warm-Up", description: "Reaches target temperature in under 10 minutes" },
+    { icon: Bell, title: "Smart Alarms", description: "Graduated alerts with visual and audio cues" },
+  ];
+
+  return (
+    <Layout>
+      {/* Hero */}
+      <section className="py-20 md:py-28 bg-hero-gradient">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
+              Advanced Features for{" "}
+              <span className="text-gradient">Critical Care</span>
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
+              Every feature is designed with one goal: providing the safest, 
+              most nurturing environment for vulnerable newborns.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Features */}
+      <section className="py-20">
+        <div className="container mx-auto px-6">
+          <div className="space-y-20">
+            {mainFeatures.map((feature, index) => (
+              <div 
+                key={feature.title}
+                className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 animate-fade-in`}
+                style={{ animationDelay: `${0.1 * index}s` }}
+              >
+                <div className="flex-1">
+                  <div className="w-16 h-16 rounded-2xl bg-accent flex items-center justify-center mb-6">
+                    <feature.icon className="w-8 h-8 text-primary" />
+                  </div>
+                  <h2 className="text-3xl font-bold text-foreground mb-4">{feature.title}</h2>
+                  <p className="text-muted-foreground text-lg mb-6">{feature.description}</p>
+                  <ul className="space-y-3">
+                    {feature.highlights.map((highlight) => (
+                      <li key={highlight} className="flex items-center gap-3 text-foreground">
+                        <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                        <span>{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex-1">
+                  <div className="aspect-square max-w-md mx-auto bg-card border border-border rounded-3xl p-8 flex items-center justify-center shadow-soft">
+                    <div className="w-32 h-32 rounded-full bg-accent flex items-center justify-center animate-float">
+                      <feature.icon className="w-16 h-16 text-primary" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Features Grid */}
+      <section className="py-20 bg-card border-y border-border">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              More to Love
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Every detail matters when caring for newborns. Here's what else makes NeoNatal exceptional.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {additionalFeatures.map((feature, index) => (
+              <div 
+                key={feature.title}
+                className="bg-background border border-border rounded-xl p-6 hover:shadow-soft hover:-translate-y-1 transition-all duration-300 animate-fade-in"
+                style={{ animationDelay: `${0.05 * index}s` }}
+              >
+                <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
+                <p className="text-muted-foreground text-sm">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Specs CTA */}
+      <section className="py-20">
+        <div className="container mx-auto px-6">
+          <div className="bg-primary rounded-3xl p-10 md:p-16 text-center relative overflow-hidden">
+            <div className="absolute inset-0 overflow-hidden">
+              <div className="absolute top-0 right-0 w-72 h-72 bg-primary-foreground/10 rounded-full blur-3xl" />
+            </div>
+            <div className="relative">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+                Ready for Detailed Specifications?
+              </h2>
+              <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+                Download our comprehensive product datasheet with full technical specifications, 
+                regulatory certifications, and installation requirements.
+              </p>
+              <button className="bg-primary-foreground text-primary font-semibold px-8 py-3 rounded-xl hover:bg-primary-foreground/90 transition-colors">
+                Download Datasheet
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+};
+
+export default Features;
