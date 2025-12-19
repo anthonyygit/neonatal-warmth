@@ -4,40 +4,28 @@ import { Linkedin, Mail } from "lucide-react";
 const Team = () => {
   const team = [
     {
-      name: "Dr. Sarah Chen",
-      role: "CEO & Co-Founder",
-      bio: "Neonatologist with 20+ years of clinical experience. Former Head of NICU at Johns Hopkins.",
-      image: "SC",
+      name: "Avi Sawhney",
+      role: "Co-Founder",
+      bio: "Passionate about improving neonatal care through innovative technology solutions.",
+      image: "AS",
     },
     {
-      name: "Michael Torres",
-      role: "CTO & Co-Founder",
-      bio: "Biomedical engineer specializing in thermal regulation systems. 15+ patents in medical devices.",
-      image: "MT",
+      name: "Ryan Chan",
+      role: "Co-Founder",
+      bio: "Engineering lead focused on building reliable and safe medical devices.",
+      image: "RC",
     },
     {
-      name: "Dr. Emily Watson",
-      role: "Chief Medical Officer",
-      bio: "Pediatric specialist focused on premature infant care. Published researcher in thermoregulation.",
-      image: "EW",
+      name: "Yifan Gao",
+      role: "Co-Founder",
+      bio: "Product specialist dedicated to creating intuitive healthcare solutions.",
+      image: "YG",
     },
     {
-      name: "James Park",
-      role: "VP of Engineering",
-      bio: "Former NASA thermal systems engineer. Expert in precision temperature control.",
-      image: "JP",
-    },
-    {
-      name: "Dr. Aisha Rahman",
-      role: "Head of Clinical Research",
-      bio: "PhD in Biomedical Sciences. Leading our clinical trials and regulatory approval process.",
-      image: "AR",
-    },
-    {
-      name: "David Miller",
-      role: "Head of Global Sales",
-      bio: "20 years in medical device sales. Built distribution networks across 40+ countries.",
-      image: "DM",
+      name: "Anthony Yurnets",
+      role: "Co-Founder",
+      bio: "Operations expert ensuring seamless delivery of life-saving technology.",
+      image: "AY",
     },
   ];
 
