@@ -54,7 +54,7 @@ const Team = () => {
       {/* Team Grid */}
       <section className="py-20">
         <div className="container mx-auto px-6">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 align-items:center">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
             {team.map((member, index) => <div key={member.name} className="group bg-card border border-border rounded-2xl p-6 hover:shadow-soft hover:-translate-y-1 transition-all duration-300 animate-fade-in" style={{
             animationDelay: `${0.1 * index}s`
           }}>
