@@ -23,15 +23,16 @@ const Features = () => {
     },
     {
       icon: Shield,
-      title: "Multi-Layer Safety System",
-      description: "Five independent safety mechanisms work in harmony to ensure uninterrupted protection, with automatic failover and instant alerts.",
-      highlights: ["Over-temperature protection", "Power failure backup", "Sensor malfunction detection"],
+      title: "Thermistors",
+      description: "In our design, the key temperature-sensing component is the Thermistors. The advantage of Thermistors is the fact they provide a cheap, accurate, and rapid response at the cost of a smaller functioning temperature range. Thermistors fit perfectly in our design, having the low-latency and accuracy needed for the PID. The constant flow of temperature data allows NeoTherm to react immediately to changes, such as heat loss to the environment or increased infant movement, ensuring stable thermal conditions without intervention.",
+      highlights: ["Low-latency", "Accurate", "Adaptable"],
     },
     {
       icon: Activity,
-      title: "Integrated Vital Monitoring",
-      description: "Real-time monitoring of heart rate, SpO2, and respiration with trend analysis and customizable alarm thresholds.",
-      highlights: ["Heart rate monitoring", "Pulse oximetry", "Respiration tracking"],
+      title: "PID controller",
+      description: "PIDs are a special type of controller. Unlike On/Off controllers that use negative feedback to a desired target which periodically overshoots and undershoots, PIDs allow a constant temperature to be achieved. The proportional aspect of the PID controller increases the temperature by a magnitude of the difference of the current temperature and the desired temperature. Unfortunately, the closer you get to the set point, the less it pushes. At this point, Integral action comes into play. Integral action not only account for the magnitude of error, but also the duration of the error, or how long there has been error. Derivatives also take in the rate of change of error. In short, Derivative action looks into the future and acts accordingly based on the direction the temperature is leaning towards. In total the 3 works together seamlessly allowing pinpoint precision which is crucial for newborns.
+",
+      highlights: ["Negative Feedback", "Low Error Rate", "Accurate"],
     },
     {
       icon: Wifi,
