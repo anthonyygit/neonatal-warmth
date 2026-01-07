@@ -29,21 +29,21 @@ const Features = () => {
     },
     {
       icon: Activity,
-      title: "PID controller",
+      title: "PID Controller",
       description: "PIDs are a special type of controller. Unlike On/Off controllers that use negative feedback to a desired target which periodically overshoots and undershoots, PIDs allow a constant temperature to be achieved. The proportional aspect of the PID controller increases the temperature by a magnitude of the difference of the current temperature and the desired temperature. Unfortunately, the closer you get to the set point, the less it pushes. At this point, Integral action comes into play. Integral action not only account for the magnitude of error, but also the duration of the error, or how long there has been error. Derivatives also take in the rate of change of error. In short, Derivative action looks into the future and acts accordingly based on the direction the temperature is leaning towards. In total the 3 works together seamlessly allowing pinpoint precision which is crucial for newborns.",
       highlights: ["Negative Feedback", "Low Error Rate", "Accurate"],
     },
     {
       icon: Wifi,
-      title: "Smart Connectivity",
-      description: "Seamless integration with hospital information systems, enabling remote monitoring and comprehensive data logging.",
-      highlights: ["HL7 FHIR compatible", "Remote access dashboard", "Cloud data backup"],
+      title: "Silicone Mat-Heaters",
+      description: "Now, onto our heating elements, We decided to use 4 silicone mat-heaters to heat our blanket. Silicone mat-heaters provide many advantages compared to their wire-heating counterparts. First, Silicone heaters offer more uniform heating. This means that the heat is spread out throughout the pad, resulting in a safer heating element where it is harder for the infant to be burned. Secondly, silicone is much more flexible, this means that our blanket can remain both flexible and foldable. Finally, silicone heaters are much less of a fire hazard compared to wire-heating. Not only do silicone heaters keep infants warm, they prevent them from feeling too warm.",
+      highlights: ["Uniform Heating", "100% Safe", "Flexible and Foldable"],
     },
   ];
 
   const additionalFeatures = [
     { icon: Battery, title: "4-Hour Battery Backup", description: "Continuous operation during power outages" },
-    { icon: Monitor, title: "HD Touch Display", description: "Intuitive 12-inch color touchscreen interface" },
+    { icon: Monitor, title: "LCD Smart Monitor", description: "Intuitive 12-inch color touchscreen interface" },
     { icon: Volume2, title: "Whisper-Quiet Operation", description: "Under 35dB for peaceful environment" },
     { icon: Zap, title: "Energy Efficient", description: "40% less power consumption than competitors" },
     { icon: Clock, title: "Quick Warm-Up", description: "Reaches target temperature in under 10 minutes" },
