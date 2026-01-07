@@ -42,12 +42,9 @@ const Features = () => {
   ];
 
   const additionalFeatures = [
-    { icon: Battery, title: "4-Hour Battery Backup", description: "Continuous operation during power outages" },
-    { icon: Monitor, title: "LCD Smart Monitor", description: "Intuitive 12-inch color touchscreen interface" },
-    { icon: Volume2, title: "Whisper-Quiet Operation", description: "Under 35dB for peaceful environment" },
-    { icon: Zap, title: "Energy Efficient", description: "40% less power consumption than competitors" },
-    { icon: Clock, title: "Quick Warm-Up", description: "Reaches target temperature in under 10 minutes" },
-    { icon: Bell, title: "Smart Alarms", description: "Graduated alerts with visual and audio cues" },
+    { icon: Zap, title: "Unreplicable", description: "Goldilocks zone for price and quality deters fakes" },
+    { icon: Monitor, title: "LCD Smart Monitor", description: "Intuitive monintor displays key metrics" },
+    { icon: Bell, title: "Blood Oxygen Sensor,", description: "Shoots out infrared light and detects the amount of red light produced by red blood cells" },
   ];
 
   return (
