@@ -1,22 +1,26 @@
 import Layout from "@/components/Layout";
-import { Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 const Team = () => {
   const team = [{
     name: "Avi Sawhney",
     bio: "Avi Sawhney is the business and presentation lead of the group. He did the market research and introduced the problem of hypothermia and low blood oxygen in infants.",
-    image: "AS"
+    image: "AS",
+    email: "avisawhney2011@gmail.com"
   }, {
     name: "Ryan Chan",
     bio: "Ryan Chan whose knowledge in coding, hardware, and business allowed him to contribute in every part of this project.",
-    image: "RC"
+    image: "RC",
+    email: "rchan7676@gmail.com"
   }, {
     name: "Yifan Gao",
     bio: "Yifan Gao acts as the hardware expert of the team. Through past experiences he developed the blanket by assembling the components into one functioning innovation.",
-    image: "YG"
+    image: "YG",
+    email: "yifangao4843@gmail.com"
   }, {
     name: "Anthony Yurynets",
     bio: "Anthony Yurynets is the lead-coder on the team. His experience in coding and building robots for his VEX team has allowed him to effectively design the temperature regulation software of the blanket that also monitors the vitals of the infant. He was also extremely helpful in building the actual blanket.",
-    image: "AY"
+    image: "AY",
+    email: "anthony.yurynets@gmail.com"
   }];
   const values = [{
     title: "Safety First",
@@ -62,10 +66,7 @@ const Team = () => {
                 </div>
                 <p className="text-muted-foreground text-sm mb-4">{member.bio}</p>
                 <div className="flex items-center gap-3">
-                  <a href="#" className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
-                    <Linkedin className="w-4 h-4" />
-                  </a>
-                  <a href="#" className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
+                  <a href={`mailto:${member.email}`} className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
                     <Mail className="w-4 h-4" />
                   </a>
                 </div>
