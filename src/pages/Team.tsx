@@ -3,22 +3,18 @@ import { Linkedin, Mail } from "lucide-react";
 const Team = () => {
   const team = [{
     name: "Avi Sawhney",
-    role: "Co-Founder",
     bio: "Passionate about improving neonatal care through innovative technology solutions.",
     image: "AS"
   }, {
     name: "Ryan Chan",
-    role: "Co-Founder",
     bio: "Engineering lead focused on building reliable and safe medical devices.",
     image: "RC"
   }, {
     name: "Yifan Gao",
-    role: "Co-Founder",
     bio: "Product specialist dedicated to creating intuitive healthcare solutions.",
     image: "YG"
   }, {
     name: "Anthony Yurnets",
-    role: "Co-Founder",
     bio: "Operations expert ensuring seamless delivery of life-saving technology.",
     image: "AY"
   }];
@@ -62,10 +58,7 @@ const Team = () => {
                   <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shadow-glow">
                     {member.image}
                   </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-foreground">{member.name}</h3>
-                    <p className="text-sm text-primary font-medium">{member.role}</p>
-                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">{member.name}</h3>
                 </div>
                 <p className="text-muted-foreground text-sm mb-4">{member.bio}</p>
                 <div className="flex items-center gap-3">
