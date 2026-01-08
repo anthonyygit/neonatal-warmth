@@ -2,7 +2,7 @@ import neothermLogo from "@/assets/neotherm-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-border py-12">
+    <footer className="bg-[#FAF9F6] border-t border-border py-12">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <img 
