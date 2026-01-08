@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Heart } from "lucide-react";
+import neothermLogo from "@/assets/neotherm-logo.png";
 
 const Navigation = () => {
   const location = useLocation();
@@ -17,12 +17,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-glow group-hover:scale-105 transition-transform">
-              <Heart className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold text-foreground">
-              Neo<span className="text-primary">Natal</span>
-            </span>
+            <img 
+              src={neothermLogo} 
+              alt="NeoTherm Logo" 
+              className="h-12 w-auto group-hover:scale-105 transition-transform"
+            />
           </Link>
 
           {/* Navigation Links */}
