@@ -17,7 +17,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-medium mb-6 animate-fade-in">
               <Heart className="w-4 h-4" />
-              <span>Trusted by 500+ Hospitals Worldwide</span>
+              <span>A new approach to an old problem</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
@@ -50,7 +50,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: "500+", label: "Hospitals" },
+              { value: "4", label: "Creators" },
               { value: "50K+", label: "Lives Touched" },
               { value: "99.9%", label: "Uptime" },
               { value: "24/7", label: "Support" },
@@ -135,9 +135,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
               Ready to Transform Neonatal Care?
             </h2>
-            <p className="text-primary-foreground/80 mb-8">
-              Join hundreds of hospitals worldwide providing the best care for newborns.
-            </p>
+            
             <Button 
               size="xl" 
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"

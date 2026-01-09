@@ -23,8 +23,8 @@ const Features = () => {
     },
     {
       icon: Shield,
-      title: "Thermistors",
-      description: "In our design, the key temperature-sensing component is the Thermistors. The advantage of Thermistors is the fact they provide a cheap, accurate, and rapid response at the cost of a smaller functioning temperature range. Thermistors fit perfectly in our design, having the low-latency and accuracy needed for the PID. The constant flow of temperature data allows NeoTherm to react immediately to changes, such as heat loss to the environment or increased infant movement, ensuring stable thermal conditions without intervention.",
+      title: "Mosfet Transistors",
+      description: "In our design, the key temperature-sensing component is the Mosfet Transistors. The advantage of Mosfet Transistors is the fact they provide a cheap, accurate, and rapid response at the cost of a smaller functioning temperature range. Mosfet transistors fit perfectly in our design, having the low-latency and accuracy needed for the PID. The constant flow of temperature data allows NeoTherm to react immediately to changes, such as heat loss to the environment or increased infant movement, ensuring stable thermal conditions without intervention.",
       highlights: ["Low-latency", "Accurate", "Adaptable"],
     },
     {
