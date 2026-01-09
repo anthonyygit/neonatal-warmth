@@ -134,27 +134,6 @@ const Features = () => {
       </section>
 
       {/* Specs CTA */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="bg-primary rounded-3xl p-10 md:p-16 text-center relative overflow-hidden">
-            <div className="absolute inset-0 overflow-hidden">
-              <div className="absolute top-0 right-0 w-72 h-72 bg-primary-foreground/10 rounded-full blur-3xl" />
-            </div>
-            <div className="relative">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-                Ready for Detailed Specifications?
-              </h2>
-              <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
-                Download our comprehensive product datasheet with full technical specifications, 
-                regulatory certifications, and installation requirements.
-              </p>
-              <button className="bg-primary-foreground text-primary font-semibold px-8 py-3 rounded-xl hover:bg-primary-foreground/90 transition-colors">
-                Download Datasheet
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };
